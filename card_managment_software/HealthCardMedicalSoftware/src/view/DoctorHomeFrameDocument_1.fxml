@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="860.0" prefWidth="1360.0" style="-fx-border-width: 2; -fx-border-color: black;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DoctorHomeFrameController">
+   <children>
+      <MenuBar prefHeight="32.0" prefWidth="1360.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Visit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Tools">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+              </items>
+            </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Pane layoutX="6.0" layoutY="119.0" prefHeight="736.0" prefWidth="175.0" style="-fx-border-color: blue; -fx-border-width: 1; -fx-border-style: solid;">
+         <children>
+            <Button layoutX="8.0" layoutY="43.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="156.0" text="Personal">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+            <Button layoutX="9.0" layoutY="124.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="156.0" text="Clinical">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+            <Button layoutX="8.0" layoutY="205.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="156.0" text="Examination">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+            <Button layoutX="9.0" layoutY="286.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="156.0" text="Medicine">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+            <Button layoutX="8.0" layoutY="371.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="156.0" text="Medical Test">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+            <Button layoutX="8.0" layoutY="457.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="156.0" text="Surgery">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+            <Button layoutX="8.0" layoutY="539.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="156.0" text="Additional">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+            <Button layoutX="9.0" layoutY="667.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="156.0" text="Exit">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <Pane layoutX="195.0" layoutY="119.0" prefHeight="736.0" prefWidth="1163.0" style="-fx-border-color: blue; -fx-border-width: 1; -fx-border-style: solid;">
+         <children>
+            <TitledPane layoutX="14.0" layoutY="23.0" prefHeight="120.0" prefWidth="1129.0" text="Medical Visit Information">
+               <content>
+                  <Pane prefHeight="81.0" prefWidth="1127.0">
+                     <children>
+                        <Label layoutX="14.0" layoutY="14.0" text="Patient Name:">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="53.0" text="Record Created:">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <TextField disable="true" layoutX="168.0" layoutY="12.0" prefHeight="31.0" prefWidth="396.0" text="Harpreet Singh" />
+                        <TextField disable="true" layoutX="168.0" layoutY="51.0" prefHeight="31.0" prefWidth="396.0" text="Monday 23 August 2017 11:10:55 AM" />
+                        <Label layoutX="579.0" layoutY="14.0" text="Card Number:">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <TextField disable="true" layoutX="708.0" layoutY="12.0" prefHeight="31.0" prefWidth="396.0" text="1234-12345678-1234" />
+                        <Label layoutX="579.0" layoutY="53.0" text="Card Number:">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </content>
+            </TitledPane>
+            <TitledPane layoutX="14.0" layoutY="152.0" prefHeight="369.0" prefWidth="1129.0" text="RX">
+               <content>
+                  <Pane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="13.0" layoutY="29.0" prefHeight="27.0" prefWidth="149.0" text="Search Medicine:">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <TextField layoutX="193.0" layoutY="26.0" prefHeight="31.0" prefWidth="455.0" text="Pa" />
+                        <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="652.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../res/search.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="13.0" layoutY="75.0" prefHeight="27.0" prefWidth="84.0" text="Medicine:">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="449.0" layoutY="75.0" prefHeight="27.0" prefWidth="92.0" text="Start Date:">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <TextField disable="true" layoutX="545.0" layoutY="73.0" prefHeight="31.0" prefWidth="135.0" text="01-08-2017" />
+                        <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="684.0" layoutY="74.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../res/calendar.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="734.0" layoutY="75.0" prefHeight="27.0" prefWidth="61.0" text="Days:">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <TextField layoutX="796.0" layoutY="73.0" prefHeight="31.0" prefWidth="63.0" text="10" />
+                        <Label layoutX="884.0" layoutY="73.0" prefHeight="27.0" prefWidth="92.0" text="End Date:">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <TextField disable="true" layoutX="977.0" layoutY="71.0" prefHeight="31.0" prefWidth="135.0" text="10-08-2017" />
+                        <Label layoutX="13.0" layoutY="117.0" prefHeight="27.0" prefWidth="84.0" text="Dosage:">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="381.0" layoutY="117.0" prefHeight="27.0" prefWidth="92.0" text="Intake:">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <TextField layoutX="477.0" layoutY="115.0" prefHeight="31.0" prefWidth="135.0" text="1" />
+                        <Label layoutX="823.0" layoutY="117.0" prefHeight="27.0" prefWidth="149.0" text="Daily Frequency:">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <TextField layoutX="979.0" layoutY="115.0" prefHeight="31.0" prefWidth="135.0" text="2" />
+                        <ComboBox layoutX="621.0" layoutY="115.0" prefHeight="31.0" prefWidth="69.0" promptText="pc" />
+                        <CheckBox layoutX="381.0" layoutY="170.0" mnemonicParsing="false" selected="true" text="Morning" />
+                        <CheckBox layoutX="559.0" layoutY="170.0" mnemonicParsing="false" text="Noon" />
+                        <CheckBox layoutX="712.0" layoutY="170.0" mnemonicParsing="false" text="Evening" />
+                        <CheckBox layoutX="873.0" layoutY="170.0" mnemonicParsing="false" selected="true" text="Night" />
+                        <RadioButton layoutX="381.0" layoutY="202.0" mnemonicParsing="false" text="Before Breakfast" />
+                        <RadioButton layoutX="381.0" layoutY="232.0" mnemonicParsing="false" selected="true" text="After Breakfast" />
+                        <RadioButton layoutX="557.0" layoutY="202.0" mnemonicParsing="false" text="Before Meal" />
+                        <RadioButton layoutX="557.0" layoutY="232.0" mnemonicParsing="false" text="After Meal" />
+                        <RadioButton layoutX="714.0" layoutY="198.0" mnemonicParsing="false" text="Before Snacks" />
+                        <RadioButton layoutX="714.0" layoutY="228.0" mnemonicParsing="false" text="After Snacks" />
+                        <RadioButton layoutX="871.0" layoutY="198.0" mnemonicParsing="false" text="Before Dinner" />
+                        <RadioButton layoutX="871.0" layoutY="228.0" mnemonicParsing="false" selected="true" text="After Dinner" />
+                        <CheckBox layoutX="989.0" layoutY="170.0" mnemonicParsing="false" text="When Needed" />
+                        <Label layoutX="14.0" layoutY="271.0" prefHeight="27.0" prefWidth="149.0" text="Comment:">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <TextField layoutX="194.0" layoutY="268.0" prefHeight="31.0" prefWidth="528.0" text="Not more than two" />
+                        <Button layoutX="820.0" layoutY="259.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="126.0" text="ADD" textFill="BLUE">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Button>
+                        <Button layoutX="972.0" layoutY="265.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="126.0" text="Remove" textFill="#90060f">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Button>
+                        <ComboBox layoutX="118.0" layoutY="74.0" prefHeight="31.0" prefWidth="304.0" promptText="Paracetamol 500" />
+                     </children>
+                  </Pane>
+               </content>
+            </TitledPane>
+            <TitledPane layoutX="14.0" layoutY="529.0" prefHeight="192.0" prefWidth="913.0" text="Advised Medicine List">
+               <content>
+                  <TableView fx:id="medTabList" prefHeight="200.0" prefWidth="200.0" />
+               </content></TitledPane>
+            <Pane layoutX="943.0" layoutY="551.0" prefHeight="151.0" prefWidth="200.0" style="-fx-border-color: blue; -fx-border-width: 2;">
+               <children>
+                  <Button layoutX="9.0" layoutY="53.0" mnemonicParsing="false" onAction="#saveAction" prefHeight="51.0" prefWidth="182.0" text="SAVE ALL" textFill="BLUE">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <Pane layoutX="6.0" layoutY="47.0" prefHeight="64.0" prefWidth="1351.0" style="-fx-border-color: blue; -fx-border-width: 1; -fx-border-style: solid;">
+         <children>
+            <ImageView fitHeight="54.0" fitWidth="170.0" layoutX="1176.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../res/logo.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="8.0" layoutY="19.0" text="Doctor:">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="doctorname_lab" layoutX="80.0" layoutY="19.0" text="Dr. Manoj Parikar" textFill="BLUE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="251.0" layoutY="19.0" text="Center:">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="323.0" layoutY="19.0" text="Hijli Primary" textFill="BLUE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="486.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../res/add.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="589.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../res/delete.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="681.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../res/copy.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="775.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../res/paste.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="871.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../res/save.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="963.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../res/print.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="1055.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../res/home.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
